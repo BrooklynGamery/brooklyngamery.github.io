@@ -1,0 +1,13 @@
+# Site settings
+title: Brooklyn Gamery
+email: hello@brooklyngamery.com
+description: > # this means to ignore newlines until "baseurl:"
+  Handcrafted video games delivered straight to your device. 
+  A game development studio based in Brooklyn.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://brooklyngamery.com" # the base hostname & protocol for your site
+twitter_username: BrooklynGamery
+github_username:  BrooklynGamery
+
+# Build settings
+markdown: kramdown
