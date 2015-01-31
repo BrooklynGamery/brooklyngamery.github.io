@@ -40,8 +40,8 @@ p {
 a {
 	color:$gray;
 	text-decoration:none;
-  padding-bottom:3px;
-  border-bottom:1px solid $grayL1;
+	padding-bottom:3px;
+	border-bottom:1px solid $grayL1;
 	
 	&:hover {
 		color:$grayL1;
@@ -57,6 +57,9 @@ a {
   font-family:$displaycopy;
   font-weight:$buttonweight;
   display:inline-block;
+  background: none;
+  color:$gray;
+  cursor: pointer;
   
 	&:hover {
 		color:$grayL1;
@@ -67,6 +70,18 @@ a {
     box-shadow:inset 0 3px 0 $grayL2;
     padding-top:7px;
     padding-bottom:1px;
+  }
+
+  &.button-medium {
+    padding-top:10px;
+    padding-bottom:9px;
+    font-size:1.5em;
+    margin-top:3px;
+    
+    &:active {
+      padding-top:13px;
+      padding-bottom:6px;
+    }
   }
   
   &.button-large {
@@ -99,9 +114,66 @@ img {
 	}
 }
 
+#mc_embed_signup {
+	padding:20px 0 50px;
+	border-top:1px dotted $grayL1;
+	margin-top:50px;
+
+	.indicates-required {
+		font-size:.75em;
+		font-weight:$bodycopyweight;
+		margin-left:10px;
+	}
+
+	.mc-field-group {
+		margin-bottom: 20px;
+	}
+
+	label {
+		margin-bottom:5px;
+	}
+
+	label, input:not([type="submit"]) {
+		display:block;
+	}
+
+	input {
+		&:focus {
+			outline:none;
+		}
+	}
+
+	input:not([type="submit"]) {
+		font-family:$bodycopy;
+		font-weight:$bodycopyweight;
+		box-shadow: none;
+		box-sizing:border-box;
+		width:100%;
+		padding:5px;
+		height:35px;
+		font-size:1em;
+
+		&:focus {
+
+		}
+	}
+
+	input.mce_inline_error {
+		border-color: $grayD1 !important;
+	}
+
+	div.mce_inline_error {
+		background: $grayD1 !important;
+	}
+
+	.clear {
+		text-align: right;
+	}
+}
+
 .footer {
   border-top:1px dotted $grayL1;
-  margin-top:50px;
+  // margin-top:50px;
   text-align:center;
   
   p {

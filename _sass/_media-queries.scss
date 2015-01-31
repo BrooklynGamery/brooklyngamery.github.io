@@ -1,5 +1,5 @@
 @media screen and (min-width:960px) {
-  .info, .header {
+  .info, .header, .footer {
     max-width: 700px;
     width:70%;
     margin:0 auto;
@@ -26,5 +26,10 @@
 	
 	.info {
 		margin-top:50px;
+	}
+
+	#mc_embed_signup .indicates-required {
+		display:block;
+		margin-left: 0;
 	}
 }
