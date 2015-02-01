@@ -112,6 +112,17 @@ img {
 		display:block;
 		margin:0 auto;
 	}
+
+	a {
+		border:0;
+		padding:0;
+		display: block;
+		transition: .2s opacity;
+
+		&:hover {
+			opacity: .75;
+		}
+	}
 }
 
 #mc_embed_signup {
