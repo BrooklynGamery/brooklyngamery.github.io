@@ -1,8 +1,34 @@
-@media screen and (min-width:960px) {
+@media screen and (min-width:961px) {
   .info, .header, .footer {
     max-width: 700px;
     width:70%;
     margin:0 auto;
+  }
+
+  .frame-sidebar {
+    position:fixed;
+    width:30%;
+    float:left;
+    @include box-sizing;
+    padding-right: 50px;
+    max-width:300px;
+
+    h1 {
+      font-size: 1.5em;
+    }
+  }
+
+  .frame-container {
+    position:relative;
+
+    .header, .footer {
+      width: 100%;
+    }
+  }
+
+  .frame-content {
+    width:70%;
+    float:right;
   }
 }
 
@@ -18,6 +44,17 @@
 	h1 {
 		font-size:1.5em;
 	}
+
+  .frame-sidebar {
+      border-bottom:1px dotted $grayL1;
+      margin-bottom:50px;
+
+    > h1 {
+      font-size: 2em;
+      text-align: center;
+    }
+  }
+
 	
 	.header, .info {
 		width:auto;
@@ -32,4 +69,8 @@
 		display:block;
 		margin-left: 0;
 	}
+
+  .presskit-links {
+    display: none;
+  }
 }

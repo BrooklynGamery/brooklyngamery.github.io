@@ -48,7 +48,9 @@ $on-laptop:        800px;
 @import
         "fonts",
         "variables",
+        "mixins",
         "base",
-        "syntax-highlighting",
+        "framed-page",
+	    "syntax-highlighting",
         "media-queries"
 ;

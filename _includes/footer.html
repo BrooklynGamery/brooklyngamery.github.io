@@ -3,5 +3,11 @@
   	<a class="button button-large" href="http://eepurl.com/QvuTn">Join our mailing list.</a>
   </p> -->
   
-  <p>Contact us at <a href="mailto:hello(at)brooklyngamery.com?subject=Hello!&body=Hi! P.S. Make sure you change the (at) to @ in our email address!">hello(at)brooklyngamery.com</a> or on <a href="http://twitter.com/brooklyngamery">Twitter</a>.</p>
+  <p>Contact us at <a href="mailto:hello(at)brooklyngamery.com?subject=Hello!&body=Hi! P.S. Make sure you change the (at) to @ in our email address!">hello(at)brooklyngamery.com</a> or on <a href="http://twitter.com/brooklyngamery">Twitter</a>.
+  {% if page.url == "/index.html" %}
+	   <a href="https://docs.google.com/document/d/154eR85fYYxI5UShW7zuKjKcKZ3EtEcdW0DjQ-T2qpV4/edit?usp=sharing">Press Kit</a>
+   {% else %}
+		<a href="http://eepurl.com/QvuTn">Subscribe to our mailing list</a>
+   {% endif %}
+   </p>
 </footer>
