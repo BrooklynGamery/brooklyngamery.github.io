@@ -5,15 +5,20 @@
     margin:0 auto;
   }
 
+  .frame-body {
+    padding:0;
+  }
+
   .frame-sidebar {
     position:fixed;
     width:30%;
     float:left;
     @include box-sizing;
-    padding-right: 25px;
-    max-width: 275px;
+    padding: 40px 25px 0 40px;
+    max-width: 290px;
     height: 100%;
     border-right: 1px dotted $grayL1;
+    overflow-y:auto;
 
     h1 {
       font-size: 1.5em;
@@ -32,7 +37,7 @@
     width:70%;
     float:right;
     @include box-sizing;
-    padding-left:3%;
+    padding: 40px 25px 40px 3%;
   }
 }
 
